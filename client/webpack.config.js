@@ -11,7 +11,10 @@ module.exports = () => {
     mode: 'development',
     entry: {
       main: './src/js/index.js',
-      install: './src/js/install.js'
+      install: './src/js/install.js',
+      editor: './src/js/editor.js',
+      header: './src/js/header.js',
+
     },
     output: {
       filename: '[name].bundle.js',
@@ -30,7 +33,7 @@ module.exports = () => {
         fingerprints: false,
         inject: true,
         name: 'JATE',
-        short_name: 'Contact',
+        short_name: 'JATE',
         description: 'This is casual text editor. Any time you can use for memo!',
         background_color: '#225ca3',
         theme_color: '#225ca3',
